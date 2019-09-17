@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yuliyang.well_design.nested_scroll.NestedScrollParentLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/id_stickynavlayout_topview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#ff0"
+        android:gravity="center"
+        android:text="TOP"
+        android:textSize="40sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/testScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center"
+                android:text="A"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center"
+                android:text="B"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center"
+                android:text="C"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center"
+                android:text="D"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center"
+                android:text="E"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center"
+                android:text="F"
+                android:textSize="40sp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</com.yuliyang.well_design.nested_scroll.NestedScrollParentLayout>
